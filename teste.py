@@ -67,7 +67,7 @@
 
 # print(lista_invertida)
 
-#exercicio 08
+# exercicio 08
 # palavras = ["python", "java", "python", "c", "java", "python"]
 # somatoria = {}
 
@@ -79,7 +79,7 @@
 
 # print(somatoria)
 
-#exercicio 09
+# exercicio 09
 
 # notas = {
 #     "Ana": 8,
@@ -95,7 +95,7 @@
 
 # print("A maior nota e do: ", nome01, "que tirou", maior_nota)
 
-#exercicio 10
+# exercicio 10
 
 # gastos = [
 #     {"categoria": "comida", "valor": 50},
@@ -129,35 +129,74 @@
 # for venda in vendas:
 #     vendedor = venda["vendedor"]
 #     valor = venda["valor"]
-    
+
 #     if vendedor not in somatoria:
 #         somatoria[vendedor] = 0
 #     somatoria[vendedor] += valor
 # print(somatoria)
 
-#11-b Descubra quem vendeu mais
-vendas = [
-    {"vendedor": "Ana", "valor": 300},
-    {"vendedor": "Carlos", "valor": 500},
-    {"vendedor": "Ana", "valor": 700},
-    {"vendedor": "João", "valor": 400},
-    {"vendedor": "Carlos", "valor": 200}
-]
-somatoria = {}
+# 11-b Descubra quem vendeu mais
+# vendas = [
+#     {"vendedor": "Ana", "valor": 300},
+#     {"vendedor": "Carlos", "valor": 500},
+#     {"vendedor": "Ana", "valor": 700},
+#     {"vendedor": "João", "valor": 400},
+#     {"vendedor": "Carlos", "valor": 200}
+# ]
+# somatoria = {}
 
-for venda in vendas:
-    vendedor = venda["vendedor"]
-    valor = venda["valor"]
-    
-    if vendedor not in somatoria:
-        somatoria[vendedor] = 0
-    somatoria[vendedor] += valor
+# for venda in vendas:
+#     vendedor = venda["vendedor"]
+#     valor = venda["valor"]
 
-maior_vendedor = 0
-nome01 = ""
-for nome, valor in somatoria.items():
-    if valor > maior_vendedor:
-        maior_vendedor = valor
-        nome01 = nome
+#     if vendedor not in somatoria:
+#         somatoria[vendedor] = 0
+#     somatoria[vendedor] += valor
 
-print("o maior vendedor foi: ", nome01, "Que vendeu: ", maior_vendedor)
+# maior_vendedor = 0
+# nome01 = ""
+# for nome, valor in somatoria.items():
+#     if valor > maior_vendedor:
+#         maior_vendedor = valor
+#         nome01 = nome
+
+# print("o maior vendedor foi: ", nome01, "Que vendeu: ", maior_vendedor)
+# exercicio 11-c
+
+# vendas = [
+#     {"vendedor": "Ana", "valor": 300},
+#     {"vendedor": "Carlos", "valor": 500},
+#     {"vendedor": "Ana", "valor": 700},
+#     {"vendedor": "João", "valor": 400},
+#     {"vendedor": "Carlos", "valor": 200}
+# ]
+
+# somatoria = {}
+# for venda in vendas:
+#     vendedor = venda["vendedor"]
+#     valor = venda["valor"]
+#     if vendedor not in somatoria:
+#         somatoria[vendedor] = 0
+#     somatoria[vendedor] += valor
+
+# somatudo = 0
+# for nome, valor in somatoria.items():
+#     somatudo += valor
+# media = somatudo / len(somatoria)
+
+# print("Total vendido:", somatudo)
+# print("Media por vendedor:", media)
+
+# two sum
+
+# target = 9
+# nums = [11,15,2,7]
+# mapa = {}
+
+# for i, num in enumerate(nums):
+#     complemento = target - num
+
+#     if complemento in mapa:
+#         print([mapa[complemento], i])
+
+#     mapa[num] = i
