@@ -240,12 +240,9 @@
 # print(duplicados)
 
 # nums = [100, 4, 200, 1, 3, 2]
-
 # nums.sort()
-
 # sequencia_atual = 1
 # maior = 1
-
 # for i in range(len(nums)-1):
 #     if nums[i] + 1 == nums[i+1]:
 #         sequencia_atual += 1
@@ -294,3 +291,68 @@
 #         maior = i
 
 # print(f"o maior numero da lista e: {maior}")
+
+#
+# palavras = ["python", "java", "python", "c", "java", "python"]
+# hasher = {}
+
+# for palavra in palavras:
+#     if palavra not in hasher:
+#         hasher[palavra] = 1
+#     else:
+#         hasher[palavra] += 1
+# print(hasher)
+
+# nums = [1,2,3,4,5,6]
+
+# soma = 0
+# for num in nums:
+#     if num % 2 == 0:
+#         soma += num
+# print(soma)
+
+
+#find the duplicated
+# nums = [1, 2, 3, 2, 4, 5, 1, 6,6]
+# hasher = {}
+# duplicados = []
+
+# for num in nums:
+#     if num not in hasher:
+#         hasher[num] = 1
+#     else:
+#         hasher[num] += 1
+    
+# for i,num in hasher.items():
+#     if num > 1:
+#         duplicados.append(i)
+
+
+# print(duplicados)
+
+# nums = [11,15,7,2]
+# target = 9
+# hasher = {}
+
+# for i,num in enumerate(nums):
+#     complemento = target - num
+
+#     if complemento in hasher:
+#         print(hasher[complemento],i)
+    
+#     hasher[num] = i
+
+
+nums = [1, 2, 3, 2, 4, 5, 1, 6,6]
+hasher = {}
+duplicados = []
+
+for num in nums:
+    if num not in hasher:
+        hasher[num] = 1
+    else:
+        hasher[num] += 1
+
+for i, num in hasher.items():
+    if num > 1:
+        duplicados.append(i)
