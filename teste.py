@@ -273,3 +273,24 @@
 #     if soma == target:
 #         print([i,j])
 
+# two sum hash map
+# target = 9
+# nums = [11,2,5,8,2,3,1,7]
+# hasher = {}
+
+# for i,num in enumerate(nums):
+#     complemento = target - num
+
+#     if complemento in hasher:
+#         print(hasher[complemento], i)
+
+#     hasher[num] = i
+
+# nums = [4,8,2,10,3,19,20,30,100]
+# maior = 0
+
+# for i in nums:
+#     if i > maior:
+#         maior = i
+
+# print(f"o maior numero da lista e: {maior}")
