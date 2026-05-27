@@ -200,3 +200,76 @@
 #         print([mapa[complemento], i])
 
 #     mapa[num] = i
+
+# nums = [4,8,1,20,3]
+# maior = 0
+
+# for i in nums:
+#     if i > maior:
+#         maior = i
+
+# print(maior)
+
+# frase = "python java python javascript java python"
+# frase = frase.split()
+
+# hash = {}
+
+# for palavra in frase:
+#     if palavra not in hash:
+#         hash[palavra] = 1
+#     else:
+#         hash[palavra] += 1
+
+# print(hash)
+
+# nums = [4, 5, 1, 2, 5, 4, 3, 2, 2]
+
+# hash = {}
+# duplicados = []
+# for num in nums:
+#     if num not in hash:
+#         hash[num] = 1
+#     else:
+#         hash[num] += 1
+
+# for chave,valor in hash.items():
+#         if valor > 1:
+#              duplicados.append(chave)
+            
+# print(duplicados)
+
+# nums = [100, 4, 200, 1, 3, 2]
+
+# nums.sort()
+
+# sequencia_atual = 1
+# maior = 1
+
+# for i in range(len(nums)-1):
+#     if nums[i] + 1 == nums[i+1]:
+#         sequencia_atual += 1
+#         if sequencia_atual > maior:
+#             maior = sequencia_atual
+#     else:
+#         sequencia_atual = 1
+# print(maior)
+
+# target = 24
+# lista = [5,3,23,16,1]
+
+# for i in range(len(lista)):
+#     for j in range(len(lista)):
+#         soma = lista[i] + lista[j]
+#     if soma == target:
+#         print([i,j])
+# two sum brute force
+# lista = [11,15,7,2]
+# target = 9
+
+# for i in range(len(lista)):
+#     for j in range(len(lista)):
+#         soma = lista[i] + lista[j]
+#     if soma == target:
+#         print([i,j])
+
