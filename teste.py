@@ -343,16 +343,159 @@
 #     hasher[num] = i
 
 
-nums = [1, 2, 3, 2, 4, 5, 1, 6,6]
-hasher = {}
-duplicados = []
+# nums = [1, 2, 3, 2, 4, 5, 1, 6,6]
+# hasher = {}
+# duplicados = []
 
-for num in nums:
-    if num not in hasher:
-        hasher[num] = 1
-    else:
-        hasher[num] += 1
+# for num in nums:
+#     if num not in hasher:
+#         hasher[num] = 1
+#     else:
+#         hasher[num] += 1
 
-for i, num in hasher.items():
-    if num > 1:
-        duplicados.append(i)
+# for i, num in hasher.items():
+#     if num > 1:
+#         duplicados.append(i)
+
+# two sum
+# nums = [11, 15, 2, 7]
+# target = 9
+# hasher = {}
+
+# for i, num in enumerate(nums):
+#     complemento = target - num
+
+#     if complemento in hasher:
+#         print(hasher[complemento], i)
+
+#     hasher[num] = i
+
+# is duplicaded
+
+# nums = [1, 2, 3, 2, 4, 5, 1, 6,6]
+# hasher = {}
+# duplicados = []
+
+# for num in nums:
+#     if num not in hasher:
+#         hasher[num] = 1
+#     else:
+#         hasher[num] += 1
+
+# for i, num in hasher.items():
+#     if num > 1:
+#         duplicados.append(i)
+
+# print(duplicados)
+
+# nums = [11, 15, 2, 7]
+# target = 9
+# hasher = {}
+
+# for i, num in enumerate(nums):
+#     complemento = target - num
+
+#     if complemento in hasher:
+#         print(hasher[complemento], i)
+
+#     hasher[num] = i
+
+# nums = [1, 2, 3, 2, 4, 5, 1, 6,6]
+# hasher = {}
+# duplicados = []
+
+# for num in nums:
+#     if num not in hasher:
+#         hasher[num] = 1
+#     else:
+#         hasher[num] += 1
+# for i,num in hasher.items():
+#     if num > 1:
+#         duplicados.append(i)
+
+# print(duplicados)
+
+# palavras = [
+#     "python",
+#     "java",
+#     "python",
+#     "c",
+#     "java",
+#     "python",
+#     "go",
+#     "java"
+# ]
+
+# hasher = {}
+# maior = 0
+# repetidas_maior = ""
+# for palavra in palavras:
+#     if palavra not in hasher:
+#         hasher[palavra] = 1
+#     else:
+#         hasher[palavra] += 1
+# for palavra,quantidade in hasher.items():
+#     if quantidade > maior:
+#         maior = quantidade
+#         repetidas_maior = palavra
+
+# print(f"O Palavra que mais se repete : {repetidas_maior} Apraeceu: {maior}")
+
+#retorne apenas numeros que aprecem apaenas uma vez
+
+# nums = [4, 1, 2, 1, 2, 7, 8, 8]
+# hasher = {}
+# unicos = []
+# for num in nums:
+#     if num not in hasher:
+#         hasher[num] = 1
+#     else:
+#         hasher[num] += 1
+# for i,num in hasher.items():
+#     if num == 1:
+#         unicos.append(i)
+# print(unicos)
+
+#Retorne o primeiro número que aparece apenas uma vez.
+# nums = [2, 3, 4, 2, 3, 5, 4]
+# hasher = {}
+
+# for num in nums:
+#     if num not in hasher:
+#         hasher[num] = 1
+#     else:
+#         hasher[num] += 1
+
+# for num in nums:
+#     if hasher[num] ==1:
+#         print(num)
+
+# anagrama
+
+# def eh_anagrama(palavra1, palavra2):
+#     palavra1 = palavra1.replace(" ", "").lower()
+#     palavra2 = palavra2.replace(" ", "").lower()
+
+#     if len(palavra1) != len(palavra2):
+#         return False
+
+#     hasher = {}
+#     for letra in palavra1:
+#         if letra not in hasher:
+#             hasher[letra] = 1
+#         else:
+#             hasher[letra] += 1
+
+#     for letra in palavra2:
+#         if letra not in hasher:
+#             return False
+
+#         hasher[letra] -= 1
+
+#         if hasher[letra] < 0:
+#             return False
+#     return True
+
+# print(eh_anagrama("amor", "roma"))
+# print(eh_anagrama("python", "java"))
+# print(eh_anagrama("Roma", "Amor"))
