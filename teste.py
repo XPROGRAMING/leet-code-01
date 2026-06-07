@@ -499,3 +499,11 @@
 # print(eh_anagrama("amor", "roma"))
 # print(eh_anagrama("python", "java"))
 # print(eh_anagrama("Roma", "Amor"))
+
+
+numero = int(input("Par ou impar, Digite um numero: "))
+
+if numero % 2 == 0:
+    print(f'o numero: {numero} e par')
+else:
+    print(f'o numero {numero} e impar')
