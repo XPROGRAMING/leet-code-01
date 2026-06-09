@@ -501,9 +501,42 @@
 # print(eh_anagrama("Roma", "Amor"))
 
 
-numero = int(input("Par ou impar, Digite um numero: "))
+# numero = int(input("Par ou impar, Digite um numero: "))
 
-if numero % 2 == 0:
-    print(f'o numero: {numero} e par')
-else:
-    print(f'o numero {numero} e impar')
+# if numero % 2 == 0:
+#     print(f'o numero: {numero} e par')
+# else:
+#     print(f'o numero {numero} e impar')
+
+# nums = [1, 2, 3, 2, 4, 5, 1, 6,6]
+# hasher = {}
+# duplicados = []
+
+# for num in nums:
+#     if num not in hasher:
+#         hasher[num] = 1
+#     else:
+#         hasher[num] += 1
+
+# for i,num in hasher.items():
+#     if num > 1:
+#         duplicados.append(i)
+
+# print(duplicados)
+
+
+nums = [1, 2, 3, 2, 4, 5, 1, 6,6]
+hasher = {}
+duplicados = []
+
+for num in nums:
+    if num not in hasher:
+        hasher[num] = 1
+    else:
+        hasher[num] += 1
+
+for i,num in hasher.items():
+    if num > 1:
+        duplicados.append(i)
+
+print(duplicados)
